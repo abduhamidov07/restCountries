@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto Mono", sans-serif;
+  background-image: url("https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 60px;
+}
+
+.title {
+  font-size: 35px;
+  color: #afafaf;
+  text-align: center;
+  margin: 45px 0;
+}
+
+.sidebar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  border-radius: 16px;
+  flex: 1;
+  height: 280px;
+  transition: .5s;
+}
+
+.card:hover {
+  flex: 2;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.cardInfo p {
+  font-size: 18px;
+  color: rgb(141, 141, 141);
+}
+
+.cardInfo span {
+  font-weight: 700;
+  color: #afafaf;
+}
+
+@media (max-width: 1200px) {
+  .total {
+    margin: 0 20px;
+  }
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+    height: 300px;
+  }
+}
+
